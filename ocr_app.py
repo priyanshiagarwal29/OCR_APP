@@ -3,6 +3,8 @@ import pytesseract
 from PIL import Image
 import os
 
+pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
+
 app = Flask(__name__)
 
 UPLOAD_FOLDER = "uploads"
